@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="unsplash">
+        <div class="logo">
+            <img src="odin-lined.png" alt="logo">
+            <a>ODIN</a>
+        </div>
+        <div>Photo by Lexi Laginess</div>
+
+    </div>
+    <div class="back">
+        <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+            Sign up <em>now</em> to get started.
+
+            You <em>know</em> you want to.</div>
+        <div class="form">Let's do this!
+            <form id="signupForm" action="path" method="post">
+                <div>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Thor">
+                </div>
+                <div>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Odinson">
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="">
+                </div>
+                <div>
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="">
+                </div>
+                <div>
+                    <label for="passWord">PASSWORD</label>
+                    <input type="password" name="passWord" id="passWord" placeholder="">
+                </div>
+                <div>
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="">
+                </div>
+
+            </form>
+
+        </div>
+        <div>
+            <button type="button" id="submitButton">Create Account</button>
+            <div>Already have an account? <a href="">Log in</a></div>
+        </div>
+
+        <script>
+            document.getElementById("submitButton").addEventListener("click", function () {
+                document.getElementById("signupForm").submit();
+            });
+        </script>
+    </div>
+</body>
+
+</html>

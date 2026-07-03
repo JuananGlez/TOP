@@ -1,0 +1,68 @@
+html{
+    font-size: 20px;
+}
+*   {
+    background-color: purple;
+    color: yellowgreen;
+    /* outline: 2px solid red; */
+}
+
+body {
+    margin: 1%;
+    text-align: center;
+    padding-bottom: 30%;
+}
+
+.recipe {
+    position: fixed;
+    top: 0;
+    text-align: left;
+    width: max-content;
+    margin: 0% 0% 0% 5%;
+    padding: 0%;
+}
+.recipe a{
+    text-decoration: none;
+}
+img {
+    padding: 1rem;
+    max-width: 30vw;
+}
+
+/* Dispositivos verticales */
+@media (max-width: 100vh) { 
+
+    .lists{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }   
+}
+
+/* Dispositivos horizontales */
+@media (max-height: 100vw) { 
+
+    div h1,h2,h3,p{
+        margin: 0% 30%;
+    }
+    .lists{
+        display: flex;
+        flex-direction: row;
+        padding: 0 10%;
+    }
+}
+
+h2,h3 {
+    padding: 4em 0 1em 0; 
+}
+ul,ol {
+    flex:1;
+    text-align: justify;
+    margin: 1%;
+}
+li {
+    padding: 4px;
+}
+
+
+

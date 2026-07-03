@@ -1,0 +1,48 @@
+body {
+    background-color: grey;
+    display: flex;
+    width: 300px;
+    height: 500px;
+    flex-direction: column;
+    justify-self: center;
+    margin: 10%;
+}
+
+#head {
+    background-color: rgb(0 0 256 / 30%);
+    padding-top: 3%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    min-height: fit-content;
+    height: 20%;
+}
+
+/* #result {
+    text-align: left;
+    align-content: baseline;
+    font-size: 5vh;
+    min-height: 5vh;
+} */
+
+#display,
+#result {
+    text-align: right;
+    align-content: end;
+    font-size: 7vh;
+    /* min-height: 7vh; */
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    height: 80%;
+    width: 100%;
+}
+
+button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
