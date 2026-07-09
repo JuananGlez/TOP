@@ -7,7 +7,7 @@ function Book(name, author, pages, read) {
     this.pages = pages;
     this.read = read;
     this.info = function () {
-        console.log(this.name + " by " + this.author + ", " + this.pages + ", " + this.read);
+        return this.name + " by " + this.author + ", " + this.pages + ", " + this.read;
     };
 }
 
