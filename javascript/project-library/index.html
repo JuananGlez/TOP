@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/book-open-page-variant-outline.svg" alt="">
+            <h1>Library</h1>
+            <button onclick="showNewBook()" id="plus">
+                <img class="plus" src="images/book-plus-outline.svg" alt="">
+            </button>
+        </div>
+        <div class="content">
+        </div>
+        <form class="addbook">
+            <div>
+                <label>Title:</label><br>
+                <input class="bracket" type="text" id="title">
+            </div>
+            <div>
+                <label>Author:</label><br>
+                <input class="bracket" type="text" id="author">
+            </div>
+            <div>
+                <label>Pages:</label><br>
+                <input class="bracket" type="text" id="pages">
+            </div>
+            <div style="width: stretch;">
+                <label>Read?:</label>
+                <input type="checkbox" id="read">
+            </div>
+            <div><input type="button" value="Add book" onclick="new newBook()"></div>
+        </form>
+        <div class="lower">
+            <h3>JuananGlez</h3>
+        </div>
+    </div>
+    <script src="library.js"></script>
+</body>
+
+</html>
