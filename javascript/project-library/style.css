@@ -55,6 +55,17 @@ button {
     margin: 1vh;
     padding: 1vh;
     border-radius: 5px;
+    display: grid;
+    grid-template-rows: 0fr 0fr 1fr;
+
+    * {
+        padding: 0.3vh;
+    }
+}
+
+.minus {
+    width: 2.5em;
+    justify-self: flex-end;
 }
 
 .addbook {
