@@ -24,7 +24,8 @@ const player0 = {
 
 // let idButton = document.getElementById('b1').id
 
-function clickPlay(id) {
-    gameBoard.  = "X";
-    console.log(id)
+function clickPlay(mark) {
+    // gameBoard.b1 = "X"
+    gameBoard.$mark = "X";
+    console.log(gameBoard)
 }
