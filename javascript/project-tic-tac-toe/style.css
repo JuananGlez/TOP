@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+body {
+    background-color: rgb(149, 149, 149);
+}
+
+container {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    margin: 1vh;
+    display: grid;
+    grid-template-rows: 0fr 1fr 0fr;
+}
+
+header {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    margin: 1vh;
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    text-align: center;
+    padding-left: 5vh;
+}
+
+.reload {
+    width: 5vh;
+}
+
+.game {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    margin: 1vh 10vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 25vh;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 1vh;
+    text-align: center;
+}
