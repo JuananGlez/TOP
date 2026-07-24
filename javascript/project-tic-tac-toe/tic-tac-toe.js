@@ -1,31 +1,31 @@
-const gameBoard = {
-    "b1": "",
-    "b2": "",
-    "b3": "",
-    "b4": "",
-    "b5": "",
-    "b6": "",
-    "b7": "",
-    "b8": "",
-    "b9": "",
-};
-const playerX = {
 
-};
-const player0 = {
+const createPlayer = (name, mark) => {
+    return {
+        name,
+        mark
+    }
+}
+const Game = (() => {
+    let gameBoard = ["", "", "", "", "", "", "", "", "",];
+    let players = [
+        createPlayer(document.querySelector('#PlayerX').value, 'X'),
+        createPlayer(document.querySelector('#PlayerO').value, 'O')
+    ];
+    gameBoard.forEach(() => {
+        let button = document.createElement('button')
 
-};
+        document.querySelector('.gameBoard').append(button)
 
-(() => {
-    document.getElementById('b1').innerHTML = gameBoard.b1;
+    })
+    const startGame = () => {
+        console.log('hola')
 
+    };
+    return { startGame, }
 
 })();
 
-// let idButton = document.getElementById('b1').id
 
-function clickPlay(mark) {
-    // gameBoard.b1 = "X"
-    gameBoard.$mark = "X";
-    console.log(gameBoard)
-}
+(() => { })();
+
+

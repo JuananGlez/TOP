@@ -14,10 +14,14 @@
             <h1>Tic Tac Toe</h1>
             <button type="button" class="reload"></button>
         </header>
-        <div class="game">
-            <button type="button" id="b1" onclick="clickPlay(b1)"></button><button type="button" id="b2" onclick="clickPlay(b2)"></button><button type="button" id="b3" onclick="clickPlay(b3)"></button><button type="button" id="b4" onclick="clickPlay(b4)"></button><button type="button" id="b5" onclick="clickPlay(b5)"></button><button type="button" id="b6" onclick="clickPlay(b6)"></button><button type="button" id="b7" onclick="clickPlay(b7)"></button><button type="button" id="b8" onclick="clickPlay(b8)"></button><button type="button" id="b9" onclick="clickPlay(b9)"></button>
+        <div class="gameBoard">
         </div>
-        <button type="button" id="start" onclick="startGame()">Start</button>
+        <div class="gameStart">
+            <input type="text" id="PlayerX" placeholder="Player X">
+            <input type="text" id="PlayerO" placeholder="Player O">
+
+            <button type="button" id="start" onclick="Game.startGame()">Start</button>
+
         </div>
         <footer>
             <p>JuananGlez</p>
